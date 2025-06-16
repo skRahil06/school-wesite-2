@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -629,13 +629,13 @@
     // Form submission handler
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
-
+      
       // Simple animation feedback
       const button = this.querySelector('button');
       const originalText = button.textContent;
       button.textContent = 'Sending...';
       button.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
-
+      
       setTimeout(() => {
         button.textContent = 'Message Sent!';
         setTimeout(() => {
@@ -650,7 +650,7 @@
     window.addEventListener('scroll', () => {
       const scrolled = window.pageYOffset;
       const parallaxElements = document.querySelectorAll('.floating-element');
-
+      
       parallaxElements.forEach((element, index) => {
         const speed = (index + 1) * 0.1;
         element.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.02}deg)`;
@@ -662,11 +662,11 @@
       card.addEventListener('mouseenter', function() {
         this.style.transform = 'rotateY(10deg) rotateX(5deg) translateZ(20px) scale(1.05)';
       });
-
+      
       card.addEventListener('mouseleave', function() {
         this.style.transform = 'rotateY(0deg) rotateX(0deg) translateZ(0px) scale(1)';
       });
     });
   </script>
 </body>
-</html> -->
+</html>
